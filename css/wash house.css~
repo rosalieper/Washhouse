@@ -1,0 +1,183 @@
+body {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    background-color: #909090;
+    color: #696969;
+    padding: 3px;
+}
+
+#main {
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    border-bottom: 3px solid #509920;
+    color: #409970;
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+ul#menu {
+	margin-top: 1px;
+    padding: 10px;
+    margin-bottom: 1px;
+}
+
+ul#menu li {
+    display: inline;
+    margin-right: 1px;
+}
+
+ul#menu li a {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #696969;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+    color: white;
+    background-color: #709900;
+}
+.carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    /*filter: grayscale(90%); make all photos black and white */
+    width: 50%; /* Set width to 50% */
+    margin: auto;
+}
+
+.carousel-caption h3 {
+    color: #000000 !important;
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+}
+.panel {
+    border: 1px solid #709900;
+    border-radius:0;
+    transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.panel-footer .btn:hover {
+    border: 1px solid #709900;
+    background-color: #fff !important;
+    color: #709900;
+}
+.panel-footer {
+    background-color: #ffffff !important;
+}
+
+.panel-footer h3 {
+    font-size: 32px;
+}
+
+.panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.panel-footer .btn {/*styling the sign up btn*/
+    margin: 15px 0;
+    background-color: #709900;
+    color: #fff;
+}
+
+.img-round {/* styling the services.html pictures*/
+    border-radius: 15px 60px;
+    background: #73AD21;
+    padding: 12px;
+    width: 250px;
+    height: 200px;
+}
+/*styling of the transitions in the Galery*/
+    #transitions:hover {
+      -webkit-transition: all 1300ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+   -moz-transition: all 1300ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+     -o-transition: all 1300ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+        transition: all 1300ms cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
+        -webkit-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+   -moz-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+     -o-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+        transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
+
+    }
+
+    /*styling the pictures in Galery*/
+    #f1_container {
+  position: relative;
+  margin: 10px auto;
+  width: 450px;
+  height: 281px;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 90%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+  box-shadow: -5px 5px 5px #aaa;
+}
+.face {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+}
+
+/**/
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+.cool {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.cool:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}

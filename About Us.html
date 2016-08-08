@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About</title>
+  <meta charset="utf-8">
+	   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src = "js/bootstrap.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/wash house.css">
+</head>
+
+<body>
+<div id="main" class="text-center">
+  <h1>About Us</h1>
+  <span>
+      <p>CLeanliness in Practicum</p>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group input-group">
+          <input type="text" class="form-control" placeholder="Search..">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>        
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+      <!-- Trigger the modal with a button -->
+        <li id="mybtn"><a href="#"><span class="glyphicon glyphicon-user"></span>LogIn</a></li>
+      </ul>
+    </div>
+    </span>
+    <nav id="row1" class="text-center"></nav>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content text-left">
+        <div class="modal-header" style="padding:20px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+        </div>
+        <div class="modal-body" style="padding:20px 50px;">
+          <form role="form" action="PHP/Login.php" method="post">
+            <div class="form-group">
+              <label for="usrname" class="glyphicon glyphicon-user"></label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter name" required>
+            </div>
+            <div class="form-group">
+              <label for="psw" class="glyphicon glyphicon-eye-open"></label>
+              <input type="password" class="form-control" id="psw" placeholder="Enter password" required>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div class="col-sm-12 form-group">
+              <button class="btn btn-success pull-right glyphicon glyphicon-lock" type="submit">LogIn</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <!--button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button-->
+          <p>Not a member? <a href="SubscribeForm/register.html">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+<nav id="row1"></nav>
+
+   <h2>What our customers say</h2>
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
+    </div>
+    <div class="item">
+      <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
+    </div>
+    <div class="item">
+      <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+    <span class="sr-only">100%</span>
+  </div>
+</div>
+<div><p>Since purchasing the Washouse, Annie and Matt continue to develop the concept of a completely new and improved laundry for the 21st century—catering to college students and busy professionals who have limited time to do laundry. Their vision is to combine the highest-quality, most efficient laundry equipment in a comfortable, café inspired environment that provides first-class amenities including free wireless Internet & big-screen televisions.</p>
+<div class="col-sm-4">
+	<p><strong>We are well aquiped for your services</strong></p>
+	<img src="images/equipment3.jpg">
+</div>
+<div class="col-sm-4">
+<p><strong>We also sell detergents for your home lundry</strong></p>
+	<img src="images/equipment.jpeg">
+</div>
+<div class="col-sm-4">
+<p><strong>We also provide wash machines, available in all our branches</strong></p>
+<img src="images/equipment2.jpeg"></div>
+    <!-- Button to trigger modal -->
+    <a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+     
+    <!-- Modal -->
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Modal header</h3>
+      </div>
+      <div class="modal-body">
+        <p>One fine body…</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        <button class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+</div>
+  <footer id="foot01"></footer>
+</div>
+	<script type = "text/javascript" src="js/script.js"></script>
+</body>
+</html> 

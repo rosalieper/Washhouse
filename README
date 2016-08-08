@@ -1,0 +1,24 @@
+Requirements:
+=========================
+1. The database is required to store and manage all the data conserning the online customers of a
+wash house, that is payement of all their services on the online platform of the wash house in
+question.
+• A table 'Users' keeps trac of all the users.
+• A table 'Orders' keeps trac of the commands or orders given by the users.
+• A table 'ContactUs' store and records all the comments and feedback on the platform.
+• A table 'Users_has_Orders' records the users request and orders including quantity ordered.
+2. The database should manage the account for all users and include privacy for each account.
+• Use of passwords
+Softwares used:
+=========================
+--Ubuntu14 OS
+--MySql-Work-Bench
+--Sublime text editor
+--LiberOffice Writer
+
+Hardwares used:
+=========================
+--Hp laptop
+--4G RAM capacity
+--Dual core
+--500G hard disk space
