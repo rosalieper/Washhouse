@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-ng-app>
+<html>
 <head data-ng-app="">
   <title>Contact Us</title>
   <meta charset="utf-8">
@@ -8,13 +8,15 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<script type="text/javascript" src = "js/bootstrap.min.js"></script>
 		<script src="../js/jquery.min.js"></script>
 		<link href="css/wash house.css" rel="stylesheet">
 </head>
-<body><div id="main">
 
+<body>
+
+<div id="main">
   	<h1 class="text-center">Contact Us</h1>
     <span>
     <p class="text-center">CLeanliness in Practicum</p>
@@ -86,14 +88,14 @@
         <div class="col-sm-4 form-group">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
         </div>
-        <div class="col-sm-4 form-group" class = "container">
-          <input class="form-control" id="email" placeholder="subject" type="text" data-ng-model="subject" required>
-        </div>
+        <div class ="container">
+		Name:<input type = "text" ng-model = "name" /> {{name}}
+	<div>
         <div class="col-sm-4 form-group">
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" rows="5" value = "Subject: ">{{ subject }}</textarea><br>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
           <button class="btn btn-success btn-lg pull-right" type="submit">Send</button>
@@ -107,7 +109,5 @@
 </div>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/angularjs.js"></script>
-	
-
 </body>
 </html>
